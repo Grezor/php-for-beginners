@@ -12,7 +12,7 @@
     $greeting = "hello";
     echo "$greeting Everybody!"; 
     ?></h1>
-
+    <!-- condition-->
     <?php 
     $name = "Dark Matter";
     $read = true;
@@ -23,5 +23,21 @@
     }
     ?>
     <h2 class="text2"><?= $message; ?></h2>
+
+    <!-- arrays -->
+    <h1>recommanded Books</h1>
+    <?php 
+        $books = [
+            "Atomic Habits",
+            "June",
+            "BookName 2",
+            "Harry Potter"
+        ];
+    ?>
+    <ul>
+        <?php foreach($books as $book) : ?>
+            <li><?= $book; ?></li>
+        <?php endforeach; ?>
+    </ul>
 </body>
 </html>
