@@ -73,49 +73,6 @@
         <?php endforeach; ?>
     </ul>
 <br>
-  <!-- Functions and Filters -->
-  <h1> Functions and Filters</h1>
-    <?php 
-        // fake data
-        $cars = [
-            [
-               'entreprise' =>  'Renault',
-               'name' => 'Clio',
-               'moteur' => 'TCE',
-               'date' => 2019
-            ],
-            [
-                'entreprise' =>  'Renault',
-                'name' => 'Captur',
-                'moteur' => 'TCE',
-                'date' => 2013
-            ],
-            [
-                'entreprise' =>  'Audi',
-                'name' => 'a1',
-                'moteur' => 'TCE',
-                'date' => 2013
-            ]
-        ];
 
-        function filterByEntreprise()
-        {
-            
-        }
-    ?>
-
-<ul>
-        <?php foreach($cars as $car) : ?>
-            <?php if($car['entreprise'] === 'Renault') : ?>
-            <li>Nom constructeur : <?= $car['entreprise']; ?> </li>
-            <ul>
-                <li>Nom voiture : <?= $car['name']; ?></li>
-                <li>Moteur : <?= $car['moteur']; ?></li>
-                <li>Sortie : <?= $car['date']; ?></li>
-            </ul>
-        <?php endif; ?>
-        <?php endforeach; ?>
-    </ul>
-<br>
 </body>
 </html>
