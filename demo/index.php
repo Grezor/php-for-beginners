@@ -39,5 +39,39 @@
             <li><?= $book; ?></li>
         <?php endforeach; ?>
     </ul>
+
+    <hr>
+
+    <!-- Associative Arrays -->
+    <h1>Associative Arrays</h1>
+    <?php 
+        // fake data
+        $cars = [
+            [
+               'entreprise' =>  'Renault',
+               'name' => 'Clio',
+               'moteur' => 'TCE',
+               'date' => 2019
+            ],
+            [
+                'entreprise' =>  'Renault',
+                'name' => 'Captur',
+                'moteur' => 'TCE',
+                'date' => 2013
+            ]
+        ];
+    ?>
+
+<ul>
+        <?php foreach($cars as $car) : ?>
+            <li>Nom constructeur : <?= $car['entreprise']; ?> </li>
+            <ul>
+                <li>Nom voiture : <?= $car['name']; ?></li>
+                <li>Moteur : <?= $car['moteur']; ?></li>
+                <li>Sortie : <?= $car['date']; ?></li>
+            </ul>
+        <?php endforeach; ?>
+    </ul>
+
 </body>
 </html>
